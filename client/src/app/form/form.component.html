@@ -1,0 +1,36 @@
+<form #userForm="ngForm" (ngSubmit)="submitUser()" class="p-4" >
+  <div class="flex items-center gap-4">
+    <div class="flex flex-col basis-1/2">
+      <label for="">First name</label>
+      <input type="text" class="border rounded p-2" required name="firstName" [(ngModel)]="model.firstName" >
+    </div>
+    <div class="flex flex-col basis-1/2">
+      <label for="">Last name</label>
+      <input type="text" class="border rounded p-2" required name="lastName" [(ngModel)]="model.lastName" >
+    </div>
+  </div>
+  <div class="flex flex-col">
+    <label for="">Birthday</label>
+    <input type="text" name="birthday" class="border rounded p-2" required [(ngModel)]="model.birthday">
+  </div>
+  <div class="flex flex-col">
+    <label for="">Email</label>
+    <input type="text" name="email" class="border rounded p-2" required [(ngModel)]="model.email">
+  </div>
+  <div class="flex flex-col">
+    <label for="">Phone number</label>
+    <input type="text" name="phone" class="border rounded p-2" required [(ngModel)]="model.phone">
+  </div>
+  <div class="flex flex-col">
+    <label for="">Country</label>
+    <input type="text" name="country" class="border rounded p-2" required [(ngModel)]="model.country">
+  </div>
+  <div class="flex flex-col">
+    <label for="">Salary</label>
+    <input type="text" name="salary" class="border rounded p-2" required [(ngModel)]="model.salary">
+  </div>
+  <div class="flex justify-end gap-4 py-4 px-4">
+    <input type="reset" class="rounded bg-stone-200 text-stone-800 font-bold text-xl py-2 px-8" value="cancel">
+    <button type="submit" class="rounded bg-sky-700 text-white font-bold text-xl py-2 px-8">Save</button>
+  </div>
+</form>

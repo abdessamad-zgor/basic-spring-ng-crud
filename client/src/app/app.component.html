@@ -4,4 +4,12 @@
     <i class="pi w-[1.5em] h-[1.5em] pi-plus border border-sky-400 rounded-full text-xl text-center text-sky-400"></i>
   </p-button>
 </div>
+
 <app-table/>
+
+<p-dialog>
+</p-dialog>
+
+<p-dialog header="Create new user" [(visible)]="dialogOpen" [modal]="true" [style]="{width: '50vw'}">
+  <app-form (resultEvent)="showResult($event)"/>
+</p-dialog>

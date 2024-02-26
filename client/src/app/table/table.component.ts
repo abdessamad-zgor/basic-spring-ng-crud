@@ -3,11 +3,12 @@ import { NgFor } from '@angular/common';
 import {TableModule} from "primeng/table";
 import { UserService } from '../services/user.service';
 import { User } from '../models/user.model';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-table',
   standalone: true,
-  imports: [TableModule, NgFor],
+  imports: [TableModule, NgFor, ButtonModule],
   templateUrl: './table.component.html',
   styleUrl: './table.component.scss'
 })

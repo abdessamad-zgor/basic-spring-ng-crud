@@ -17,4 +17,9 @@ export class UserService {
       this.serviceUrl+"/all"
     )
   }
+
+  addUser(user: User){
+    console.log(user);
+    return this.http.post<string>(this.serviceUrl+"/add", user)
+  }
 }

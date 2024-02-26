@@ -97,4 +97,10 @@ public class User {
   public void setPhone(String phone){
     this.phone = phone;
   }
+
+  @Override
+  public String toString() {
+    return String.format("User { id: %s, first_name: %s, last_name: %s, email: %s, phone: %s, country: %s, salary: %s}", id, firstName, lastName, email, phone, country, salary);
+  }
 }
+
